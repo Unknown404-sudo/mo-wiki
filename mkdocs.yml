@@ -1,0 +1,110 @@
+site_name: MO Wiki
+site_url: https://mo.cyezoi.com/
+
+plugins:
+  - search
+
+extra:
+  analytics: 
+    provider: google
+    property: G-XXXXXXXXXX
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >- 
+            Thanks for your feedback! Help us improve this page by
+            using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
+
+theme:
+  name: material
+  language: 'zh'
+  features:
+    - navigation.tabs
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.instant
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.footnote.tooltips
+  include_search_page: false
+  search_index_only: true
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+extra_javascript:
+  - javascripts/katex.js
+  - https://unpkg.com/katex@0/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
+
+extra_css:
+  - https://unpkg.com/katex@0/dist/katex.min.css
+
+nav:
+  - 简介:
+    - Getting Started: index.md
+    - F.A.Q.: intro/faq.md
+  - 工具软件:
+    - 工具软件部分简介: tools/index.md
+  - 集合论与数理逻辑:
+    - 集合论与数理逻辑部分简介: set/index.md
+  - 代数学:
+    - 代数学部分简介: algebra/index.md
+    - 基础知识:
+      - 数与运算:
+        - 狭义数的分类: algebra/basic/num/classify.md
+        - 数的基础运算: algebra/basic/num/calc.md
+        - 数的进阶运算: algebra/basic/num/advance.md
+        - 初识广义数: algebra/basic/num/widen.md
+      - 代数式的意义: algebra/basic/algebraic.md
+      - 多项式初步: algebra/basic/poly.md
+      - 等式、方程与不等式:
+        - 一元一次方程: algebra/basic/equation/linear.md
+        - 一次方程组: algebra/basic/equation/linears.md
+        - 一元一次不等式（组）: algebra/basic/equation/oneneq.md
+        - 一元二次方程与一元二次不等式: algebra/basic/equation/quadratic.md
+        - 一元高次方程: algebra/basic/equation/higher.md
+        - 二元二次方程组: algebra/basic/equation/quadratics.md
+        - 代数方程（组）: algebra/basic/equation/aleq.md
+      - 函数基础知识:
+        - 平面直角坐标系与函数基础: algebra/basic/function/basic.md
+        - 函数的图象性质: algebra/basic/function/quality.md
+        - 导函数与导数的综合运用: algebra/basic/function/derived.md
+        - 多项式函数: algebra/basic/function/poly.md
+        - 指数函数、对数函数、幂函数: algebra/basic/function/power.md
+        - 三角函数相关: algebra/basic/function/tri.md
+        - 抽象函数与基本技巧: algebra/basic/function/abstract.md
+      - 一元二次函数与一元二次方程: algebra/basic/quad.md
+      - 三角（不）等式与三角恒等变形: algebra/basic/tri.md
+    - 进阶知识: 
+      - 函数进阶: 
+        - 构造函数: algebra/advance/function/struct.md
+        - 不动点原理: algebra/advance/function/immovable.md
+  - 几何学:
+    - 几何学部分简介: geometry/index.md
+  - 拓扑学:
+    - 拓扑学部分简介: topo/index.md
+  - 分析数学:
+    - 分析数学部分简介: analy/index.md
+  - 数论:
+    - 数论部分简介: numb/index.md
+  - 统计学:
+    - 统计学部分简介: stat/index.md
+  - 概率论:
+    - 概率论部分简介: prob/index.md
+  - 运筹学:
+    - 运筹学部分简介: opera/index.md

@@ -236,7 +236,7 @@ $$0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, \cdots$$
 
     应用自然数乘法的定义, 证明以下等式成立: （本题中 $n'$ 表示 $n$ 的后继）
 
-    (1) $\forall a, b \in \mathbb{N}, a \cdot b' = a \cdot b + b$
+    (1) $\forall a, b \in \mathbb{N}, a \cdot b' = a \cdot b + a$
 
     (2) $\forall a, b \in \mathbb{N}, a \cdot b = b \cdot a$ (**乘法交换律**)
 
@@ -322,7 +322,7 @@ $$0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, \cdots$$
 
     (2) $16 - 7$
 
-    (3) $16 - (6 + 3)$
+    (3) $16 - (6 + 3)$b
 
     (4) $16 - 6 - 3$
 

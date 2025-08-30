@@ -2,9 +2,11 @@
 
 **数** 这个概念大家一定不陌生, 但是真要说出数是如何定义的, 或许便有些发难。没关系, 我们一步一个脚印, 从 $0$[^1] 开始。
 
-## 什么是整数
+## 概念与定理部分
 
-### 整数的直观定义
+### 什么是整数
+
+#### 整数的直观定义
 
 直觉上, $\cdots , -2, -1, 0, 1, 2, \cdots$ 这些数就叫做整数。
 
@@ -18,9 +20,9 @@
 
 不难发现, 这种定义方法的确很直观, 但是很不严谨啊, 和数学严谨的气质非常不符, 所以接下来介绍的就是整数的严谨定义
 
-### 整数的严谨定义[^2]
+#### 整数的严谨定义[^2]
 
-#### 皮亚诺公理
+##### 皮亚诺公理
 
 在介绍整数的严谨定义之前, 我们需要引入一个公理: **皮亚诺公理**, 它研究的是自然数理论的公理, 说人话就是如何定义自然数
 
@@ -81,7 +83,7 @@ $$0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, \cdots$$
 
 在严谨定义了自然数后, 整数也就不难定义了, 在后面会进行解释, 读者也可自行思考
 
-### 数学归纳法
+#### 数学归纳法
 
 自然数域的数学归纳法指的是: （实质上很像归纳公理）
 
@@ -92,9 +94,9 @@ $$0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, \cdots$$
 
 它的证明属于分析数学的领域, 故不在这里详细展开, 但是它的应用相对广泛, 可以是困难的证明题的切入点
 
-### 自然数的加法
+#### 自然数的加法
 
-#### 自然数加法的定义
+##### 自然数加法的定义
 
 在皮亚诺公理中, 我们这样定义加法: 
 
@@ -129,7 +131,7 @@ $$0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, \cdots$$
 
     (5) $2 + 1 = 1' + 1 = (1 + 1)' = 2' = 3$ (应用了(3)的结论)
 
-#### 自然数加法的基本运算律
+##### 自然数加法的基本运算律
 
 然后, 我们来证明一下和加法有关的运算律
 
@@ -169,7 +171,7 @@ $$0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, \cdots$$
 
     $\hspace{1em}$ 再证当 $a + b = b + a$ 时, $a + b' = b' + a$
 
-    $\hspace{1.5em}$ 由(1)结论可知 $a + b' = (a + b)' = a' + b$ 成立
+    $\hspace{1.5em}$ 由(1)结论可知 $a + b' = (a + b)' = (b + a)' = b' + a$ 成立
 
     $\hspace{1em}$ 故由数学归纳法可知, $\forall a, b \in \mathbb{N}, a + b = b + a$
 
@@ -187,9 +189,9 @@ $$0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, \cdots$$
 
     $\hspace{1em}$ 证毕
 
-### 自然数的乘法
+#### 自然数的乘法
 
-#### 自然数乘法的定义
+##### 自然数乘法的定义
 
 在皮亚诺公理中, 我们这样定义乘法: 
 
@@ -226,7 +228,7 @@ $$0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, \cdots$$
 
     (5) $2 \times 1 = 1' \times 1 = 1 \times 1 + 1 = 1 + 1 = 2$
 
-#### 自然数乘法的基本运算律
+##### 自然数乘法的基本运算律
 
 同样的, 我们来证明一下和乘法有关的运算律
 
@@ -238,9 +240,65 @@ $$0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, \cdots$$
 
     (2) $\forall a, b \in \mathbb{N}, a \cdot b = b \cdot a$ (**乘法交换律**)
 
-    (3) $\forall a, b \in \mathbb{N}, (a \cdot b) \cdot c = a \cdot (b \cdot c)$ (**乘法结合律**)
+    (3) $\forall a, b, c \in \mathbb{N}, a \cdot (b + c) = a \cdot b + a \cdot c$ (**乘法分配律**)
 
-    (4) $\forall a, b, c \in \mathbb{N}, a \cdot (b + c) = a \cdot b + a \cdot c$ (**乘法分配律**)
+    (4) $\forall a, b \in \mathbb{N}, (a \cdot b) \cdot c = a \cdot (b \cdot c)$ (**乘法结合律**)
+
+??? 例题4的解答
+
+    同样的, 不难想到使用数学归纳法
+
+    (1) 先证当 $a = 0$ 时该式成立
+
+    $\hspace{1.5em}$ 有 $0 \cdot b' = 0 = 0 \cdot b + 0$ 成立
+
+    $\hspace{1em}$ 再证若 $a \cdot b' = a \cdot b + a$, 则 $a' \cdot b' = a' \cdot b + a'$
+    
+    $\hspace{1.5em}$ 可以发现有 $a' \cdot b' = (a \cdot b + a) + b' = a \cdot b + (a + b') = a \cdot b + (a + b)' = a \cdot b + (a' + b) = a \cdot b + b + a' = a' \cdot b + a'$ 成立
+
+    $\hspace{1em}$ 故由数学归纳法可知, $\forall a, b \in \mathbb{N}, a \cdot b' = a \cdot b + a$
+
+    $\hspace{1em}$ 证毕
+
+    (2) 先证当 $b = 0$ 时该式成立
+
+    $\hspace{1.5em}$ 当 $a = 0$ 时, $a \cdot 0 = 0 \cdot 0 = 0 \cdot a$ 恒成立
+
+    $\hspace{1.5em}$ 若 $a \cdot 0 = 0 \cdot a = 0$, 则 $a' \cdot 0 = a \cdot 0 + 0 = a \cdot 0 = 0 = 0 \cdot a'$
+
+    $\hspace{1.5em}$ 故由数学归纳法可知, $\forall a \in \mathbb{N}, a \cdot 0 = 0 \cdot a$
+
+    $\hspace{1em}$ 再证当 $a \cdot b = b \cdot a$ 时, $a \cdot b' = b' \cdot a$
+
+    $\hspace{1.5em}$ 由(1)结论可知 $a \cdot b' = a \cdot b + a = b \cdot a + a = b' \cdot a$ 成立
+
+    $\hspace{1em}$ 故由数学归纳法可知, $\forall a, b \in \mathbb{N}, a \cdot b = b \cdot a$
+
+    $\hspace{1em}$ 证毕
+
+    (3) 先证当 $c = 0$ 时该式成立
+
+    $\hspace{1.5em}$ 不难发现有 $a \cdot (b + 0) = a \cdot b = a \cdot b + a \cdot 0$ 恒成立
+
+    $\hspace{1em}$ 再证当 $a \cdot (b + c) = a \cdot b + a \cdot c$ 时, $a \cdot (b + c') = a\cdot b + a \cdot c'$
+
+    $\hspace{1.5em}$ 可以发现 $a \cdot (b + c') = a \cdot (b + c)' = a \cdot (b + c) + a = a \cdot b + a \cdot c + a = a \cdot b + (a \cdot c + a) = a \cdot b + a \cdot c'$ 成立
+
+    $\hspace{1em}$ 故由数学归纳法可知, $\forall a, b, c \in \mathbb{N}, a \cdot (b + c) = a \cdot b + a \cdot c$
+
+    $\hspace{1em}$ 证毕
+
+    (4) 先证当 $c = 0$ 时该式成立
+
+    $\hspace{1.5em}$ 不难发现有 $(a \cdot b) \cdot c = (a \cdot b) \cdot 0 = 0 = a \cdot 0 = a \cdot (b \cdot 0) = a \cdot (b \cdot c)$ 成立
+
+    $\hspace{1em}$ 再证当 $(a \cdot b) \cdot c = a \cdot (b \cdot c)$ 时, $(a \cdot b) \cdot c' = a \cdot (b \cdot c')$
+
+    $\hspace{1.5em}$ 由(3)结论有 $(a \cdot b) \cdot c' = a \cdot b \cdot c + a \cdot b = a \cdot (b \cdot c + b) = a \cdot (b \cdot c')$ 成立
+
+    $\hspace{1em}$ 故由数学归纳法可知 $\forall a, b, c \in \mathbb{N}, (a \cdot b) \cdot c = a \cdot (b \cdot c)$
+
+    $\hspace{1em}$ 证毕
 
 ## 参考文献和
 

@@ -300,6 +300,100 @@ $$0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, \cdots$$
 
     $\hspace{1em}$ 证毕
 
+### 加法相关
+
+#### 运算的定义
+
+在一个非空集合 $A$ 中, 取任意两个元素 $a, b$, 通过某种法则 $f$ 使得有唯一的元素 $c$ 与之对应, 那么这种法则 $f$ 可以称为一种 **运算**; 同时, 若存在某种运算 $g$ 使得元素 $c, a$ 能唯一对应一个元素 $b$ 或使得元素 $c, b$ 能唯一对应一个元素 $a$, 那么称运算 $f$ 和 $g$ 互为 **逆运算**
+
+#### 减法的定义
+
+不难发现, 由于加法和乘法的结果是唯一的, 因此我们可以称加法和乘法是一种 **运算**, 那么我们是不是可以找到加法运算的逆运算呢?
+
+我们定义 **减法** 的形式为 $a - b$, 它的结果为 $c$, 那么满足 $b + c = a$
+
+通常, $a + b$ 称为 $a$ 和 $b$ 的 **和**, $a - b$ 称为 $a$ 和 $b$ 的 **差**
+
+???+ 例题5
+
+    计算下列表达式的值:
+
+    (1) $16 - 9$
+
+    (2) $16 - 7$
+
+    (3) $16 - (6 + 3)$
+
+    (4) $16 - 6 - 3$
+
+??? 例题5的解答
+
+    (1) 由于 $9 + 7 = 16$, 因此 $16 - 9 = 7$
+
+    (2) 由于 $7 + 9 = 16$, 因此 $16 - 7 = 9$
+
+    (3) $16 - (6 + 3) = 16 - 9 = 7$
+
+    (4) $16 - 6 - 3 = 10 - 3 = 7$
+
+同样的, 减法也有一些相关的形式需要证明
+
+???+ 例题6
+
+    证明下列等式成立:
+
+    (1) $\forall a, b, c \in \mathbb{N}, a + b = a + c \Leftrightarrow b = c$
+
+    (2) $\forall a, b, c \in \mathbb{N}, a \ge b, a \ge c, a - b = a - c \Leftrightarrow b = c$
+
+    (3) $\forall a, b, c \in \mathbb{N}, a \ge c, b \ge c, a - c = b - c \Leftrightarrow a = b$
+
+    (4) $\forall a, b, c \in \mathbb{N}, a \ge b + c, a - (b + c) = a - b - c$
+
+    (5) $\forall a, b, c \in \mathbb{N}, b \ge c, a \ge b - c, a - (b - c) = a - b + c$
+
+    (6) $\forall a, b, c \in \mathbb{N}, b \ge c, a + (b - c) = a + b - c$
+
+    (7) $\forall a, b, c \in \mathbb{N}, b \ge c, a \cdot (b - c) = a \cdot b - a \cdot c$
+
+??? 例题6的解答
+
+    (1) 先证 $a + b = a + c \Rightarrow b = c$
+    
+    $\hspace{1.5em}$ 设 $a + b = a + c = k$, $k \in \mathbb{N}$
+
+    $\hspace{1.5em}$ 则 $b = k - a, c = k - a$, 由减法运算的定义可知 $b = c$
+
+    $\hspace{1em}$ 再证 $b = c \Rightarrow a + b = a + c$
+
+    $\hspace{1.5em}$ 上式将 $c$ 替换为 $b$ 后显然
+
+    $\hspace{1em}$ 证毕
+
+    (2) 先证 $a - b = a - c \Rightarrow b = c$
+
+    $\hspace{1.5em}$ 设 $a - b = a - c = k$, $k \in \mathbb{N}$
+
+    $\hspace{1.5em}$ 则 $b = a - k, c = a - k$, 由减法运算的定义可知 $b = c$
+
+    $\hspace{1em}$ 再证 $b = c \Rightarrow a - b = a - c$
+
+    $\hspace{1.5em}$ 上式将 $c$ 替换为 $b$ 后显然
+
+    $\hspace{1em}$ 证毕
+
+    (3) 先证 $a - c = b - c \Rightarrow a = b$
+
+    $\hspace{1.5em}$ 设 $a - c = b - c = k$, $k \in \mathbb{N}$
+
+    $\hspace{1.5em}$ 则 $a = c + k, b = c + k$, 由加法运算的定义可知 $a = b$
+
+    $\hspace{1em}$ 再证 $a = b \Rightarrow a - c = b - c$
+
+    $\hspace{1.5em}$ 上式将 $b$ 替换为 $a$ 后显然
+
+    $\hspace{1em}$ 证毕
+
 ## 参考文献和
 
 https://zhuanlan.zhihu.com/p/519381654

@@ -394,6 +394,24 @@ $$0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, \cdots$$
 
     $\hspace{1em}$ 证毕
 
+    (4) 设 $a - (b + c) = k_1, a - b - c = k_2$
+
+    $\hspace{1em}$ 则由 $a - (b + c) = k_1$ 可得 $a = k_1 + (b + c) = k_1 + b + c$
+
+    $\hspace{1em}$ 由 $a - b - c = k_2$ 可得 $a = k_2 + c + b = k_2 + b + c$
+
+    $\hspace{1em}$ 因此 $k_1 + b + c = k_2 + b + c$, 即 $k_1 = k_2$
+
+    $\hspace{1em}$ 因此 $a - (b + c) = a - b - c$
+
+    $\hspace{1em}$ 证毕
+
+    (6) 设 $a - (b - c) = k_1, a - b + c = k_2$
+
+    $\hspace{1em}$ 则由 $a - (b - c) = k_1$ 可得 $a = k_1 + (b - c) = k_1 + b - c$
+
+    $\hspace{1em}$ 由 $a - b + c = k_2$ 可得 $a = k_2 + b - c$
+
 ## 参考文献和
 
 https://zhuanlan.zhihu.com/p/519381654

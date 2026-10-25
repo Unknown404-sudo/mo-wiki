@@ -15,5 +15,4 @@ jobs:
         uses: mhausenblas/mkdocs-deploy-gh-pages@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          CUSTOM_DOMAIN: mo.cyezoi.com
           CONFIG_FILE: mkdocs.yml
